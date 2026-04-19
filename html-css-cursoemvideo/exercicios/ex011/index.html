@@ -16,5 +16,22 @@
         <img src="imagens/g-1000.png" alt="Imagem grande">
     </picture>
 
+    <h1>Reproduzindo áudio</h1>
+    <hr>
+    <h3>Reproduzindo áudios em HTML5.</h3>
+
+    <ul>
+        <li>Fogueira</li>
+    </ul>
+    <audio src="midia/bonfire.mp3" controls></audio>
+    <!-- MP3, WAV, OGG -->
+
+    <audio preload="metadata" controls>
+        <source src="midia/train.mp3" type="audio/mpeg">
+        <source src="midia/train.ogg" type="audio/ogg">
+        <source src="midia/train.wav" type="audio/wav"> <!-- Evite usar arquivos .wav para navegação, pois geralmente são muito pesados. Disponibilize apenas para download. -->
+        <p>Navegador não compatível com o áudio. <a href="midia/train.mp3">Clique aqui para baixar.</a></p>
+    </audio>
+
 </body>
 </html>
